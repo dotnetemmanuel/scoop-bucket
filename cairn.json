@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dotnetemmanuel/Cairn/releases/download/v0.1.0/cairn_0.1.0_windows_amd64.zip",
+            "bin": [
+                "cairn.exe"
+            ],
+            "hash": "348d995dbaedd347c0a0d622be9742130d83f138f351c69e5688043685375f10"
+        },
+        "arm64": {
+            "url": "https://github.com/dotnetemmanuel/Cairn/releases/download/v0.1.0/cairn_0.1.0_windows_arm64.zip",
+            "bin": [
+                "cairn.exe"
+            ],
+            "hash": "e6e6f69ffd58ad1722cc168cd35a4581f5894403a803af4a897b649675da26f7"
+        }
+    },
+    "homepage": "https://github.com/dotnetemmanuel/Cairn",
+    "license": "MIT",
+    "description": "Keyboard-driven terminal cockpit for GitHub, with stacked PRs",
+    "post_install": [
+        "Write-Host 'Cairn needs git, git-town and gh on your PATH. Run: cairn doctor'"
+    ]
+}
